@@ -31,7 +31,6 @@ RUN ./build.sh -Target=Clean
 COPY ./src/LetMeOn/letmeon.csproj  ./src/LetMeOn/letmeon.csproj
 RUN ./build.sh -Target=Restore
 
-COPY ./test ./test
 COPY ./src ./src
 
 # Build and Test

@@ -99,7 +99,7 @@ Task("PublishWeb")
     .Does(() =>
     {
         DotNetCorePublish(
-            "./src/LetMeOn/LetMeOn.csproj",
+            "./src/LetMeOn/letmeon.csproj",
             new DotNetCorePublishSettings()
             {
                 Configuration = configuration,
