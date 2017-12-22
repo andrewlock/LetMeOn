@@ -4,7 +4,7 @@ VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0F069C0F-9853-40F6-BCA3-DBEA5DB77F5B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LetMeOn", "src\LetMeOn\LetMeOn.csproj", "{16E33CFC-753E-491F-AA96-085987C8AC0A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LetMeOn", "src\LetMeOn\letmeon.csproj", "{16E33CFC-753E-491F-AA96-085987C8AC0A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -20,7 +20,7 @@ RUN apt-get update \
 
 WORKDIR /sln
 
-COPY ./build.sh ./build.cake ./NuGet.config ./LetMeOn.sln  ./
+COPY ./build.sh ./build.cake ./NuGet.config ./letmeon.sln  ./
 
 # Install Cake, and compile the Cake build script
 RUN ./build.sh -Target=Clean
@@ -28,7 +28,7 @@ RUN ./build.sh -Target=Clean
 # Copy all the csproj files and restore to cache the layer for faster builds
 # The dotnet_build.sh script does this anyway, so superfluous, but docker can 
 # cache the intermediate images so _much_ faster
-COPY ./src/LetMeOn/LetMeOn.csproj  ./src/LetMeOn/LetMeOn.csproj
+COPY ./src/LetMeOn/letmeon.csproj  ./src/LetMeOn/letmeon.csproj
 RUN ./build.sh -Target=Restore
 
 COPY ./test ./test
