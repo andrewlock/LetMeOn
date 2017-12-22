@@ -35,7 +35,7 @@ COPY ./test ./test
 COPY ./src ./src
 
 # Build and Test
-RUN ./build.sh -Target=Build && ./build.sh -Target=Test
+RUN ./build.sh -Target=Build
 
 # Publish web app
 Run ./build.sh -Target=PublishWeb
