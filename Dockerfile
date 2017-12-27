@@ -43,5 +43,5 @@ Run ./build.sh -Target=PublishWeb
 FROM microsoft/aspnetcore:2.0.3
 WORKDIR /app
 ENV ASPNETCORE_ENVIRONMENT Production
-ENTRYPOINT ["dotnet", "LetmeOn.dll"]
+ENTRYPOINT ["dotnet", "letmeon.dll"]
 COPY --from=builder ./sln/dist .
